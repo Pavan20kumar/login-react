@@ -20,7 +20,7 @@ function Navabar (){
       }
 
       try {
-        const response = await axios.get('http://localhost:5000/login-user', {
+        const response = await axios.get('https://login-backend-zofi.onrender.com/login-user', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setUser(response.data.user);
