@@ -26,7 +26,12 @@ function Register (){
             if(data.error){
                 setError(data.error)
                 
-            }else{
+            }  
+            if(name === "" || email === "" || password === "" || age === undefined){
+                setError("Please fill in all fields")
+            }
+            
+            else{
                 window.location.href = "/login"
             }
         })
@@ -43,6 +48,7 @@ function Register (){
         
         
     }
+   
     
 
 

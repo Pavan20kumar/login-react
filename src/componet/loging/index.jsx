@@ -24,7 +24,8 @@ const Login = () => {
 
     const onSubmiteSuccess = (token) => {
       cookies.set('jwttoken', token, { expires: 1 });
-      navigate('/')
+      alert('Login successful');
+      navigate('/');
     };
 
     useEffect(() => {
